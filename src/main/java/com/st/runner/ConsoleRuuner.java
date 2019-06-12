@@ -40,7 +40,7 @@ public class ConsoleRuuner implements CommandLineRunner{
 				new Product(110,"J", "B", 17.3)
 				);
 				
-			//repo.saveAll(pList);	
+			repo.saveAll(pList);	
 			
 			Optional<Product> o= repo.findById(201);
 			if(o.isPresent()) {
@@ -52,6 +52,10 @@ public class ConsoleRuuner implements CommandLineRunner{
 			List<Product> plist=repo.findAll();
 			//plist.forEach(System.out::println);
 			plist.forEach((s)->System.out.println(s));
+			//repo.deleteById(101);
+			//repo.deleteAll();
+			repo.deleteAllInBatch();
+			
 	} 
 	
 }
