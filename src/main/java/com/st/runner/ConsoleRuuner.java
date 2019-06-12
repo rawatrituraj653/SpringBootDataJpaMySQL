@@ -54,7 +54,7 @@ public class ConsoleRuuner implements CommandLineRunner{
 			plist.forEach((s)->System.out.println(s));
 			//repo.deleteById(101);
 			//repo.deleteAll();
-			repo.deleteAllInBatch();
+			//repo.deleteAllInBatch();
 			
 	} 
 	
